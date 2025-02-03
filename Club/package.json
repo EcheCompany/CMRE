@@ -1,5 +1,5 @@
 {
-  "name": "club-mini-robotica",
+  "name": "club",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ClubMiniRobotica": "node dist/club-mini-robotica/server/server.mjs"
+    "serve:ssr:Club": "node dist/club/server/server.mjs"
   },
   "private": true,
   "dependencies": {

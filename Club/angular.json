@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ClubMiniRobotica": {
+    "Club": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/club-mini-robotica",
+            "outputPath": "dist/club",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -31,7 +31,7 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "outputMode": "server",
+            "prerender": true,
             "ssr": {
               "entry": "src/server.ts"
             }
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ClubMiniRobotica:build:production"
+              "buildTarget": "Club:build:production"
             },
             "development": {
-              "buildTarget": "ClubMiniRobotica:build:development"
+              "buildTarget": "Club:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "47cf9be4-90dc-4eb4-86ab-a308932b8fb3"
+    "analytics": false
   }
 }
